@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>invitation</title>
+  <title>집다리 초대장</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
@@ -101,7 +101,8 @@
       }
 
       .door {
-        height: 400px;
+        height: auto;
+        aspect-ratio: 3 / 5;
       }
 
       .door-number {
@@ -116,16 +117,21 @@
       .invite-content {
         padding: 5px;
       }
+
+      .invite-img {
+        height: auto;
+        max-height: 100%;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container" id="doorContainer">
     <div class="door" id="door">
-      <div class="door-number">*</div>
+      <div class="door-number">807</div>
     </div>
     <div class="invite-content">
-      <img src="kimbap-party-new.jpg" alt="Invite" class="invite-img" />
+      <img src="kimbap-party-final.jpg" alt="Invite" class="invite-img" />
     </div>
     <div class="click-text">Click the door</div>
   </div>
@@ -143,3 +149,4 @@
   </script>
 </body>
 </html>
+
