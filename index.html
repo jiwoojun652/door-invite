@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>invite</title>
+  <title>invitation</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
@@ -15,17 +15,15 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      min-height: 100vh;
-      overflow: auto;
+      height: 100vh;
+      overflow: hidden;
     }
 
     .container {
       position: relative;
-      width: 90%;
-      max-width: 400px;
-      aspect-ratio: 3 / 5;
+      width: 300px;
+      height: 500px;
       perspective: 1000px;
-      margin: 20px;
     }
 
     .door {
@@ -98,8 +96,12 @@
     /* 모바일 최적화 */
     @media (max-width: 500px) {
       .container {
-        width: 95%;
-        aspect-ratio: 3 / 5;
+        width: 90%;
+        height: auto;
+      }
+
+      .door {
+        height: 400px;
       }
 
       .door-number {
@@ -120,10 +122,10 @@
 <body>
   <div class="container" id="doorContainer">
     <div class="door" id="door">
-      <div class="door-number">807</div>
+      <div class="door-number">*</div>
     </div>
     <div class="invite-content">
-      <img src="kimbap-party.jpg" alt="Invite" class="invite-img" />
+      <img src="kimbap-party-new.jpg" alt="Invite" class="invite-img" />
     </div>
     <div class="click-text">Click the door</div>
   </div>
